@@ -10,6 +10,16 @@
           placeholder="Search..."
         />
       </div>
+      <div class="weather-wrap">
+        <div class="location-box">
+          <div class="location">Los Angeles</div>
+          <div class="date">Thursday, October 20th 2021</div>
+        </div>
+        <div class="weather-box">
+          <div class="temp">70°f</div>
+          <div class="weather">Sunny</div>
+        </div>
+      </div>
     </main>
   </div>
 </template>
@@ -35,6 +45,7 @@
 
   body {
     font-family: 'monsterrat', sans-serif;
+    color: #fff;
   }
 
   #app {
@@ -53,6 +64,36 @@
       rgba(0, 0, 0, 0.75)
     );
   }
+
+  .search-bar::placeholder {
+    color: #fff;
+  }
   .search-box {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .search-box .search-bar {
+    display: block;
+    width: 100%;
+    padding: 3rem;
+    color: #fff;
+    font-size: 2rem;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.25);
+    transition: 0.4s;
+  }
+
+  .search-box .search-bar:focus {
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 1.6rem rgba(0, 0, 0, 0.25);
+  }
+
+  .search-box .search-bar:hover {
+    background-color: rgba(255, 255, 255, 0.6);
   }
 </style>
