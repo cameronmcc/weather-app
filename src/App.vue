@@ -1,6 +1,9 @@
 <template>
   <div id="app">
     <main>
+      <div class="title">
+        <h1>To Get Started, Type a city and press Enter</h1>
+      </div>
       <div class="search-box">
         <input
           type="text"
@@ -118,6 +121,12 @@
       rgba(0, 0, 0, 0.25),
       rgba(0, 0, 0, 0.75)
     );
+  }
+
+  .title {
+    font-size: 5rem;
+    text-align: center;
+    margin: 1rem;
   }
 
   .search-bar::placeholder {
