@@ -4,16 +4,19 @@
       <div class="title">
         <h1>To Get Started, Type a city and press Enter</h1>
       </div>
-      <div class="search-box">
-        <input
-          type="text"
-          name=""
-          id=""
-          class="search-bar"
-          placeholder="Search..."
-          v-model="query"
-          @keypress="fetchWeather"
-        />
+
+      <div class="search-box-container">
+        <div class="search-box">
+          <input
+            type="text"
+            name=""
+            id=""
+            class="search-bar"
+            placeholder="Search..."
+            v-model="query"
+            @keypress="fetchWeather"
+          />
+        </div>
       </div>
       <div class="weather-wrap" v-if="typeof weather.main != 'undefined'">
         <div class="location-box">
@@ -132,13 +135,22 @@
   .search-bar::placeholder {
     color: #fff;
   }
+
+  .search-box-container {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
   .search-box {
     width: 100%;
+    max-width: 800px;
     margin-bottom: 3rem;
   }
   .search-box .search-bar {
-    display: block;
+    display: inline-block;
     width: 100%;
+    max-width: 800px;
     padding: 3rem;
     color: rgb(0, 0, 0);
     font-size: 2rem;
