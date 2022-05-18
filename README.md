@@ -1,24 +1,3 @@
-# weather-app
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+This App uses data from the openweathermap api and was a tool for me to learn Vue.js. Type in a city to get instant current weather data!
+Tech used: Vue.js, Javascript, html, css
+Live site: https://camerons-weather-app.netlify.app/
